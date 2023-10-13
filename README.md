@@ -1,4 +1,4 @@
-# EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
+![274207391-d4590fcb-0d3b-4970-9c41-05a320834e36](https://github.com/vishnupriyaramesh17/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393589/3696472f-c9dc-4b8b-8106-e17d43fefb7b)# EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
 
 ### Aim:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
@@ -96,39 +96,57 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
-
-
-
-
-
+```
+NAME: Vishnupriya R
+Reg.No: 212222110054
+```
+```
+HAL_TIM_Base_Start(&htim2);                
+HAL_TIM_PWM_Init(&htim2);                  
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 ## Output screen shots of proteus  :
- 
+ ![WhatsApp Image 2023-10-13 at 11 28 39_f491e35f](https://github.com/vishnupriyaramesh17/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393589/c4fae9d9-25ba-4b5a-9075-04a7b16ceae3)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
+![274207345-e5d9cc90-2ce5-4115-bd06-c6edbf11f314](https://github.com/vishnupriyaramesh17/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393589/94f13786-c64c-41a9-855c-eb891e0dfb1c)
+```
+TON = 2ms
+TOFF= 2ms
+TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(410^-3)
+= 250Hz
+```
 
 FOR PULSE AT 700
-
-TON = 
-TOFF=
-TOTAL TIME = 
+![274207375-63f1ddc1-3da5-4d76-ba92-fb3020fe7877](https://github.com/vishnupriyaramesh17/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393589/472fe577-32c5-4fe5-a640-6d1c2e6ab952)
+```
+TON =  2.17ms
+TOFF= 0.93ms
+TOTAL TIME = 3.1 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.110^-3)
+= 322.58Hz
+```
 
 
 FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
+![274207391-d4590fcb-0d3b-4970-9c41-05a320834e36](https://github.com/vishnupriyaramesh17/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119393589/2a50ac18-fa81-4a8a-9acc-c3a4c83c76e2)
+```
+TON = 2.88ms
+TOFF= 0.32ms
+TOTAL TIME = 3.2 
 FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.210^-30
+= 312.5Hz
+```
+
 
 
 ## Result :
